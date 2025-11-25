@@ -1,0 +1,411 @@
+/* ====== Fondo general ====== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+}
+
+/* ====== Contenedor principal ====== */
+.roster {
+  padding: 30px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ====== Encabezado tipo panel ====== */
+.performance-header {
+  background-color: #0f0f0f;
+  padding: 30px 40px;
+  border-bottom: 2px solid #ff6b00;
+}
+
+.performance-header__stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.performance-title {
+  font-size: 2.2rem;
+  color: #fdfdfc;
+  margin: 0;
+}
+
+.performance-tags {
+  display: flex;
+  gap: 12px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.tag--purple {
+  background-color: #6a1b9a;
+}
+
+.tag--teal {
+  background-color: #00897b;
+}
+
+.performance-subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 0;
+}
+
+/* ====== Marcador ====== */
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.scoreboard__teams {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.scoreboard__team {
+  margin-right: 10px;
+}
+
+.scoreboard__score {
+  color: #ff9800;
+  margin: 0 5px;
+}
+
+.scoreboard__divider {
+  color: #aaa;
+  margin: 0 5px;
+}
+
+.scoreboard__details {
+  font-size: 0.9rem;
+  color: #aaa;
+  display: flex;
+  gap: 20px;
+}
+
+/* ====== Barra de búsqueda ====== */
+.roster__search-bar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.roster__search-input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.roster__search-input::placeholder {
+  color: #888;
+}
+
+.roster__clear-button {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: #ff9800;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.roster__counter {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* ====== Botones de filtro ====== */
+.roster__filter-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.roster__filter-button {
+  background-color: #1f1f1f;
+  color: #ff9800;
+  border: 1px solid #ff9800;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.roster__filter-button:hover {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+/* ====== Tabla de estadísticas ====== */
+.roster__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.roster__table-head {
+  background-color: #1f1f1f;
+}
+
+.roster__table-cell {
+  padding: 12px;
+  border: 1px solid #333;
+  text-align: left;
+  color: #ff9800;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.roster__table-body-row:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+.roster__table-body-row:hover {
+  background-color: #333;
+}
+
+.roster__table-body-cell {
+  padding: 12px;
+  border: 1px solid #333;
+  text-align: left;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+/* ✅ Coloreo inteligente por número del jugador */
+.roster__table .row--even {
+  background-color: #1976d2 !important; /* azul fuerte */
+  color: #ffffff;
+}
+
+.roster__table .row--odd {
+  background-color: #ff9800 !important; /* naranja vibrante */
+  color: #000000;
+}
+
+/* ✅ Hover diferenciado */
+.row--even:hover {
+  background-color: #1565c0 !important; /* azul más oscuro */
+  color: #ffffff;
+}
+
+.row--odd:hover {
+  background-color: #ef6c00 !important; /* naranja más oscuro */
+  color: #ffffff;
+}
+
+/* ====== Paginación ====== */
+.pagination-controls {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.pagination-controls select {
+  margin-left: 5px;
+  padding: 5px;
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #ff9800;
+  border-radius: 4px;
+}
+
+.pagination-nav {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.pagination-nav button {
+  background-color: #1f1f1f;
+  color: #ff9800;
+  border: 1px solid #ff9800;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-nav button:hover {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.pagination-nav button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.active-page {
+  background-color: #ff9800 !important;
+  color: #fff !important;
+}
+
+/* ====== Redes sociales ====== */
+.social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social__icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.social__icon:hover {
+  transform: scale(1.2);
+}
+
+/* ====== Modo Claro ====== */
+.light {
+  background-color: #fdfdfd;
+  color: #222;
+}
+
+.light .roster__table-cell {
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.light .roster__table-body-cell {
+  color: #222;
+}
+
+/* ====== Modo Oscuro ====== */
+.dark {
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+}
+
+.dark .roster__table-cell {
+  color: #ff9800;
+  border: 1px solid #333;
+}
+
+.dark .roster__table-body-cell {
+  color: #e0e0e0;
+}
+
+/* Panel de estadísticas */
+.stats-panel {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.stats-panel h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stats-panel p {
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.stats-panel p::before {
+  content: "• ";
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.close-stats {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.close-stats:hover {
+  background-color: #e67e00;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ====== Historial de búsquedas ====== */
+.search-history {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search-history label {
+  font-weight: bold;
+  color: #ff9800;
+  font-size: 0.95rem;
+}
+
+.search-history select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ff9800;
+  background-color: #1f1f1f;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.search-history select:hover {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.clear-history {
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 1px solid #ff9800;
+  border-radius: 5px;
+  color: #ff9800;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.clear-history:hover {
+  background-color: #ff9800;
+  color: #fff;
+}
