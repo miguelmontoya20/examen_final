@@ -60,6 +60,7 @@ const players = [
   { number: 91, name: 'JORGE RAMIREZ',         team: 'TOP CLUB', position: 'GUARD',           pts: 12, reb: 3,  ast: 5 },
   { number: 92, name: 'KARIM CASTILLO',        team: 'TOP CLUB', position: 'FORWARD',         pts: 23, reb: 9,  ast: 3 },
   { number: 93, name: 'LUIS VEGA',             team: 'TOP CLUB', position: 'CENTER',          pts: 30, reb: 14, ast: 2 },
+  { number: 3,  name: 'SERGIO MUÑOZ',        team: 'TOP CLUB', position: 'GUARD',          pts: 18, reb: 6,  ast: 4 },
 
 ];
 
