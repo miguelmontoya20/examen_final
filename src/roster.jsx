@@ -64,6 +64,7 @@ const players = [
   { number: 93, name: 'ARMANDO SERNA',             team: 'TOP CLUB', position: 'CENTER',          pts: 30, reb: 14, ast: 2 },
   { number: 89, name: 'HERNAN GONZALES',        team: 'TOP CLUB', position: 'FORWARD-GUARD',   pts: 16, reb: 5,  ast: 7 },
   { number: 74, name: 'SALVADOR ORTIZ',         team: 'TOP CLUB', position: 'FORWARD-GUARD',   pts: 16, reb: 6,  ast: 7 },
+  { number: 64, name: 'HERNAN MONTOYA',         team: 'TOP CLUB', position: 'FORWARD-GUARD',   pts: 15, reb: 6,  ast: 7 },
   
 
 
